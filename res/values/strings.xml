@@ -1,26 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--
-  Copyright 2013 The Android Open Source Project
-
-  Licensed under the Apache License, Version 2.0 (the "License");
-  you may not use this file except in compliance with the License.
-  You may obtain a copy of the License at
-
-      http://www.apache.org/licenses/LICENSE-2.0
-
-  Unless required by applicable law or agreed to in writing, software
-  distributed under the License is distributed on an "AS IS" BASIS,
-  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-  See the License for the specific language governing permissions and
-  limitations under the License.
--->
-
 <resources>
-
-    <string name="app_name">Lightning</string>
-    <string name="drawer_open">Open navigation drawer</string>
-    <string name="drawer_close">Close navigation drawer</string>
-    <string name="action_websearch">Web search</string>
+    <string name="app_name">Web Hunter</string>
+    <string name="drawer_open">Open Navigation Drawer</string>
+    <string name="drawer_close">Close Navigation Drawer</string>
+    <string name="action_websearch">Search</string>
     <string name="action_refresh">Refresh</string>
     <string name="action_new_tab">New Tab</string>
     <string name="action_share">Share</string>
@@ -32,19 +15,19 @@
     <string name="google">Google</string>
     <string name="settings">Settings</string>
     <string name="location">Location Access</string>
-    <string name="password">Save your passwords</string>
-    <string name="agent">User Agent</string>
+    <string name="password">Save Passwords</string>
+    <string name="agent">View Mode</string>
     <string name="history">Clear history</string>
-    <string name="email">Email me</string>
-    <string name="flash">Enable Adobe Flash</string>
-    <string name="mobile">View as Mobile</string>
-    <string name="desk">View as Desktop</string>
-    <string name="custom">View as custom user agent</string>
+    <string name="email">Email Us</string>
+    <string name="flash">Enable Flash</string>
+    <string name="mobile">Mobile Version</string>
+    <string name="desk">Desktop Version</string>
+    <string name="custom">View as custom user</string>
     <string name="home">Homepage</string>
     <string name="settingshelp">Settings only apply to new tabs</string>
-    <string name="fullscreen">Full-screen Mode</string>
+    <string name="fullscreen">Hide Nav Bar</string>
     <string name="java">Enable JavaScript</string>
-    <string name="saveTab">Restore your tabs if they\'re lost</string>
+    <string name="saveTab">Restore Your Tabs</string>
     <string name="settings_title">Settings</string>
     <string name="download">Download Location</string>
     <string name="advanced">Advanced Settings</string>
@@ -54,11 +37,11 @@
     <string name="apache">Apache License 2.0</string>
     <string name="title_activity_new_settings">NewSettings</string>
     <string name="action_settings">Settings</string>
-    <string name="version">Application Version</string>
+    <string name="reference">Original Source</string>
     <string name="cache">Clear cache on exit</string>
-    <string name="reflow">Enable text reflow</string>
-    <string name="block">Block Images</string>
-    <string name="window">Allow sites to open new windows</string>
+    <string name="reflow">Enable Text Flow</string>
+    <string name="block">Disable Images</string>
+    <string name="window">Allow Sites to Open New Window</string>
     <string name="cookies">Enable Cookies</string>
     <string name="importbookmarks">Import bookmarks from Browser</string>
     <string name="size">Text size</string>
@@ -131,7 +114,7 @@
     <string name="action_manual">Manual</string>
     <string name="action_auto">Auto</string>
     <string name="action_follow_me">Contact Me</string>
-    <string name="url_twitter">twitter.com/ACRDevelopment</string>
+    <string name="url_dev">twitter.com/AbhijayKr</string>
     <string name="clear_cache">Clear cache</string>
     <string name="message_cache_cleared">Cache Cleared</string>
     <string name="message_import">Bookmarks Were Imported</string>
@@ -144,7 +127,7 @@
     <string name="message_blocked_local">Local file has been blocked from loading</string>
     <string name="licenses">Open Source Licenses</string>
     <string name="suggestion">Search for</string>
-    <string name="block_ads">Block Ads</string>
+    <string name="block_ads">Ad Blocker</string>
     <string name="message_untrusted_certificate">The certificate of the site is not trusted. Proceed anyway?</string>
     <string name="title_form_resubmission">Form Resubmission</string>
     <string name="message_form_resubmission">Would you like to resend the data?</string>
@@ -188,4 +171,5 @@
     <string name="bookmark_settings">Bookmark Settings</string>
     <string name="import_bookmark_error">Could not import bookmarks from file</string>
     <string name="title_chooser">Choose a file</string>
+    <string name="credits">ACR Development</string>
 </resources>

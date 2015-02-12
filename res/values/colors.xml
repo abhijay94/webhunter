@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <color name="drawer_background">#ffffff</color>
+    <color name="drawer_background">#A4A4A4</color>
     <color name="black">#ff000000</color>
-    <color name="light">#ffa0a0a0</color>
+    <color name="light">#808080</color>
     <color name="gray_dark">#222222</color>
     <color name="gray_light">#dddddd</color>
     <color name="gray_medium">#cdcdcd</color>
@@ -11,5 +11,9 @@
     <color name="gray_extra_dark">#1b1b1b</color>
     <color name="gray_list_bg">#0d000000</color>
     <color name="dark_text">#3f3f3f</color>
+    <color name="search_bg">#E6E6E6</color>
+    <color name="tab_act">#A9D0F5</color>
+    <color name="tab_sel">#4791FF</color>
+    <color name="light_theme">#5775CF</color>
 
 </resources>

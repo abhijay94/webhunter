@@ -2,6 +2,7 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/scrollView1"
     android:layout_width="match_parent"
+    android:background="@drawable/opera_bg"
     android:layout_height="match_parent" >
 
     <LinearLayout
@@ -10,10 +11,86 @@
         android:orientation="vertical" >
 
         <RelativeLayout
+            android:id="@+id/layoutFullScreen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_but"
+            android:minHeight="60dp"
+            android:paddingBottom="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp" >
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:paddingLeft="10dp"
+                android:paddingRight="60dp"
+                android:text="@string/fullscreen"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <RelativeLayout
+                android:id="@+id/setR2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true" >
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="#cdcdcd" >
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/layoutAdBlock"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_but"
+            android:minHeight="60dp"
+            android:paddingBottom="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp" >
+
+            <TextView
+                android:id="@+id/Blocker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:paddingLeft="10dp"
+                android:paddingRight="60dp"
+                android:text="@string/block_ads"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <RelativeLayout
+                android:id="@+id/setR4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true" >
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="#cdcdcd" >
+        </LinearLayout>
+
+        <RelativeLayout
             android:id="@+id/layoutLocation"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="?android:attr/listChoiceBackgroundIndicator"
+            android:background="@drawable/custom_but"
             android:minHeight="60dp"
             android:paddingBottom="10dp"
             android:paddingRight="10dp"
@@ -47,47 +124,10 @@
             android:background="#cdcdcd" />
 
         <RelativeLayout
-            android:id="@+id/layoutFullScreen"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="?android:attr/listChoiceBackgroundIndicator"
-            android:minHeight="60dp"
-            android:paddingBottom="10dp"
-            android:paddingRight="10dp"
-            android:paddingTop="10dp" >
-
-            <TextView
-                android:id="@+id/textView3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentLeft="true"
-                android:layout_centerVertical="true"
-                android:paddingLeft="10dp"
-                android:paddingRight="60dp"
-                android:text="@string/fullscreen"
-                android:textAppearance="?android:attr/textAppearanceMedium" />
-
-            <RelativeLayout
-                android:id="@+id/setR2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
-                android:layout_centerVertical="true" >
-            </RelativeLayout>
-        </RelativeLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp"
-            android:background="#cdcdcd" />
-
-        <RelativeLayout
             android:id="@+id/layoutFlash"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="?android:attr/listChoiceBackgroundIndicator"
+            android:background="@drawable/custom_but"
             android:minHeight="60dp"
             android:paddingBottom="10dp"
             android:paddingRight="10dp"
@@ -120,35 +160,6 @@
             android:layout_marginRight="5dp"
             android:background="#cdcdcd" />
 
-        <RelativeLayout
-            android:id="@+id/layoutAdBlock"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="?android:attr/listChoiceBackgroundIndicator"
-            android:minHeight="60dp"
-            android:paddingBottom="10dp"
-            android:paddingRight="10dp"
-            android:paddingTop="10dp" >
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentLeft="true"
-                android:layout_centerVertical="true"
-                android:paddingLeft="10dp"
-                android:paddingRight="60dp"
-                android:text="@string/block_ads"
-                android:textAppearance="?android:attr/textAppearanceMedium" />
-
-            <RelativeLayout
-                android:id="@+id/setR4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
-                android:layout_centerVertical="true" >
-            </RelativeLayout>
-        </RelativeLayout>
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="1dp"
@@ -157,32 +168,38 @@
             android:background="#cdcdcd" />
 
         <RelativeLayout
-            android:id="@+id/layoutUseOrbot"
+            android:id="@+id/layoutHomepage"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="?android:attr/listChoiceBackgroundIndicator"
+            android:background="@drawable/custom_but"
             android:minHeight="60dp"
             android:paddingBottom="10dp"
-            android:paddingRight="10dp"
             android:paddingTop="10dp" >
 
-            <TextView
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
                 android:layout_centerVertical="true"
-                android:paddingLeft="10dp"
-                android:paddingRight="60dp"
-                android:text="@string/enable_orbot"
-                android:textAppearance="?android:attr/textAppearanceMedium" />
+                android:orientation="vertical" >
 
-            <RelativeLayout
-                android:id="@+id/setR5"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
-                android:layout_centerVertical="true" >
-            </RelativeLayout>
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:text="@string/home"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/homepageText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:text="Small Text"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/light" />
+            </LinearLayout>
         </RelativeLayout>
 
         <LinearLayout
@@ -190,13 +207,14 @@
             android:layout_height="1dp"
             android:layout_marginLeft="5dp"
             android:layout_marginRight="5dp"
-            android:background="#cdcdcd" />
+            android:background="#cdcdcd" >
+        </LinearLayout>
 
         <RelativeLayout
             android:id="@+id/layoutUserAgent"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="?android:attr/listChoiceBackgroundIndicator"
+            android:background="@drawable/custom_but"
             android:minHeight="60dp"
             android:paddingBottom="10dp"
             android:paddingTop="10dp" >
@@ -238,7 +256,7 @@
             android:id="@+id/layoutDownload"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="?android:attr/listChoiceBackgroundIndicator"
+            android:background="@drawable/custom_but"
             android:minHeight="60dp"
             android:paddingBottom="10dp"
             android:paddingTop="10dp" >
@@ -277,52 +295,10 @@
             android:background="#cdcdcd" />
 
         <RelativeLayout
-            android:id="@+id/layoutHomepage"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="?android:attr/listChoiceBackgroundIndicator"
-            android:minHeight="60dp"
-            android:paddingBottom="10dp"
-            android:paddingTop="10dp" >
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentLeft="true"
-                android:layout_centerVertical="true"
-                android:orientation="vertical" >
-
-                <TextView
-                    android:id="@+id/textView7"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:paddingLeft="10dp"
-                    android:text="@string/home"
-                    android:textAppearance="?android:attr/textAppearanceMedium" />
-
-                <TextView
-                    android:id="@+id/homepageText"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:paddingLeft="10dp"
-                    android:text="Small Text"
-                    android:textAppearance="?android:attr/textAppearanceSmall"
-                    android:textColor="@color/light" />
-            </LinearLayout>
-        </RelativeLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp"
-            android:background="#cdcdcd" />
-
-        <RelativeLayout
             android:id="@+id/layoutSearch"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="?android:attr/listChoiceBackgroundIndicator"
+            android:background="@drawable/custom_but"
             android:minHeight="60dp"
             android:paddingBottom="10dp"
             android:paddingTop="10dp" >
@@ -335,6 +311,7 @@
                 android:orientation="vertical" >
 
                 <TextView
+                    android:id="@+id/searche"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:paddingLeft="10dp"
@@ -363,13 +340,14 @@
             android:id="@+id/layoutRendering"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="?android:attr/listChoiceBackgroundIndicator"
+            android:background="@drawable/custom_but"
             android:minHeight="60dp"
             android:orientation="vertical"
             android:paddingBottom="10dp"
             android:paddingTop="10dp" >
 
             <TextView
+                android:id="@+id/rende"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:paddingLeft="10dp"
@@ -385,7 +363,7 @@
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:textColor="@color/light" />
         </LinearLayout>
-        
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="1dp"
@@ -397,12 +375,13 @@
             android:id="@+id/layoutBookmarks"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="?android:attr/listChoiceBackgroundIndicator"
+            android:background="@drawable/custom_but"
             android:minHeight="60dp"
             android:paddingBottom="10dp"
             android:paddingTop="10dp" >
 
             <TextView
+                android:id="@+id/books"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
@@ -423,7 +402,7 @@
             android:id="@+id/layoutAdvanced"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="?android:attr/listChoiceBackgroundIndicator"
+            android:background="@drawable/custom_but"
             android:minHeight="60dp"
             android:paddingBottom="10dp"
             android:paddingTop="10dp" >
@@ -475,7 +454,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:paddingLeft="10dp"
-                    android:text="@string/url_twitter"
+                    android:text="@string/url_dev"
                     android:textAppearance="?android:attr/textAppearanceSmall"
                     android:textColor="@color/light" />
             </LinearLayout>
@@ -538,10 +517,11 @@
                 android:orientation="vertical" >
 
                 <TextView
+                    android:id="@+id/osourceref"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:paddingLeft="10dp"
-                    android:text="@string/version"
+                    android:text="@string/reference"
                     android:textAppearance="?android:attr/textAppearanceMedium" />
 
                 <TextView
@@ -549,7 +529,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:paddingLeft="10dp"
-                    android:text="Small Text"
+                    android:text="@string/credits"
                     android:textAppearance="?android:attr/textAppearanceSmall"
                     android:textColor="@color/light" />
             </LinearLayout>

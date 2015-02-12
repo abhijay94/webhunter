@@ -1,4 +1,3 @@
-<!-- Copyright 2014 ACR Development -->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/main_layout"
     android:layout_width="match_parent"
@@ -17,6 +16,7 @@
             android:layout_width="match_parent"
             android:layout_height="2dp"
             android:indeterminate="false"
+            android:background="#A4A4A4"
             android:indeterminateOnly="false"
             android:maxHeight="2dp"
             android:minHeight="2dp"
@@ -39,7 +39,7 @@
             android:layout_width="@dimen/navigation_width"
             android:layout_height="match_parent"
             android:layout_gravity="start"
-            android:background="@color/drawer_background"
+            android:background="@drawable/blur_bg"
             android:clickable="true"
             android:orientation="vertical" >
 
@@ -159,7 +159,7 @@
             android:layout_width="@dimen/navigation_width"
             android:layout_height="match_parent"
             android:layout_gravity="end"
-            android:background="@color/drawer_background"
+            android:background="@drawable/blur_bg"
             android:clickable="true"
             android:orientation="vertical" >
 
